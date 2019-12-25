@@ -1,0 +1,10 @@
+ec/edu/ups/modelo/Diagnostico.class
+ec/edu/ups/controlador/ControladorDiagnostico.class
+ec/edu/ups/modelo/CitaMedica.class
+ec/edu/ups/controlador/ControladorMedico.class
+ec/edu/ups/conexion/conexion.class
+ec/edu/ups/modelo/Persona.class
+ec/edu/ups/modelo/Paciente.class
+ec/edu/ups/controlador/ControladorPaciente.class
+ec/edu/ups/modelo/Medico.class
+ec/edu/ups/controlador/ControladorCitaMedica.class

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Persona.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">citas</a> &gt; <a href="index.source.html" class="el_package">ec.edu.ups.modelo</a> &gt; <span class="el_source">Persona.java</span></div><h1>Persona.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ec.edu.ups.modelo;
+
+import java.util.Date;
+
+/**
+ *
+ * @author diego
+ */
+public abstract class Persona {
+
+    public String cedula;
+    public String nombres;
+    public String apellidos;
+    public String telefono;
+    public String direccion;
+    public Date fechaNacimiento;
+    public String sexo;
+
+<span class="fc" id="L24">    public Persona(String cedula, String nombres, String apellidos, String telefono, String direccion, Date fechaNacimiento, String sexo) {</span>
+<span class="fc" id="L25">        this.cedula = cedula;</span>
+<span class="fc" id="L26">        this.nombres = nombres;</span>
+<span class="fc" id="L27">        this.apellidos = apellidos;</span>
+<span class="fc" id="L28">        this.telefono = telefono;</span>
+<span class="fc" id="L29">        this.direccion = direccion;</span>
+<span class="fc" id="L30">        this.fechaNacimiento = fechaNacimiento;</span>
+<span class="fc" id="L31">        this.sexo = sexo;</span>
+<span class="fc" id="L32">    }</span>
+
+<span class="nc" id="L34">    public Persona() {</span>
+        
+<span class="nc" id="L36">    }</span>
+
+    public String getCedula() {
+<span class="nc" id="L39">        return cedula;</span>
+    }
+
+    public void setCedula(String cedula) {
+<span class="nc" id="L43">        this.cedula = cedula;</span>
+<span class="nc" id="L44">    }</span>
+
+    public String getNombres() {
+<span class="nc" id="L47">        return nombres;</span>
+    }
+
+    public void setNombres(String nombres) {
+<span class="nc" id="L51">        this.nombres = nombres;</span>
+<span class="nc" id="L52">    }</span>
+
+    public String getApellidos() {
+<span class="nc" id="L55">        return apellidos;</span>
+    }
+
+    public void setApellidos(String apellidos) {
+<span class="nc" id="L59">        this.apellidos = apellidos;</span>
+<span class="nc" id="L60">    }</span>
+
+    public String getTelefono() {
+<span class="nc" id="L63">        return telefono;</span>
+    }
+
+    public void setTelefono(String telefono) {
+<span class="nc" id="L67">        this.telefono = telefono;</span>
+<span class="nc" id="L68">    }</span>
+
+    public String getDireccion() {
+<span class="nc" id="L71">        return direccion;</span>
+    }
+
+    public void setDireccion(String direccion) {
+<span class="nc" id="L75">        this.direccion = direccion;</span>
+<span class="nc" id="L76">    }</span>
+
+    public Date getFechaNacimiento() {
+<span class="nc" id="L79">        return fechaNacimiento;</span>
+    }
+
+    public void setFechaNacimiento(Date fechaNacimiento) {
+<span class="nc" id="L83">        this.fechaNacimiento = fechaNacimiento;</span>
+<span class="nc" id="L84">    }</span>
+
+    public String getSexo() {
+<span class="nc" id="L87">        return sexo;</span>
+    }
+
+    public void setSexo(String sexo) {
+<span class="nc" id="L91">        this.sexo = sexo;</span>
+<span class="nc" id="L92">    }</span>
+
+    
+    public String mostrarInfo() {
+<span class="nc" id="L96">        return &quot;Persona{&quot; + &quot;cedula=&quot; + cedula + &quot;, nombres=&quot; + nombres + &quot;, apellidos=&quot; + apellidos + &quot;, telefono=&quot; + telefono + &quot;, direccion=&quot; + direccion + &quot;, fechaNacimiento=&quot; + fechaNacimiento + &quot;, sexo=&quot; + sexo + '}';</span>
+    }
+    
+    
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>

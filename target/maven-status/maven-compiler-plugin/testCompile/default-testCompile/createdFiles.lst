@@ -1,0 +1,6 @@
+ec/edu/ups/modelo/MedicoTest.class
+ec/edu/ups/controlador/ControladorPacienteTest.class
+ec/edu/ups/controlador/ControladorMedicoTest.class
+ec/edu/ups/controlador/ControladorCitaMedicaTest.class
+ec/edu/ups/controlador/ControladorDiagnosticoTest.class
+ec/edu/ups/modelo/PacienteTest.class

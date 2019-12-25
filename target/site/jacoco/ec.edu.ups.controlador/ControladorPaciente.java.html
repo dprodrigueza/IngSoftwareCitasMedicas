@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ControladorPaciente.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">citas</a> &gt; <a href="index.source.html" class="el_package">ec.edu.ups.controlador</a> &gt; <span class="el_source">ControladorPaciente.java</span></div><h1>ControladorPaciente.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ec.edu.ups.controlador;
+
+import ec.edu.ups.modelo.Paciente;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ *
+ * @author VIVIANA
+ */
+public class ControladorPaciente {
+    
+    private Connection con;
+    private List&lt;Paciente&gt; pacientes;
+
+<span class="fc" id="L26">    public ControladorPaciente() {</span>
+<span class="fc" id="L27">        pacientes = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L28">    }</span>
+    
+    public boolean crear(Paciente paciente){
+<span class="fc" id="L31">        pacientes.add(paciente);</span>
+<span class="fc" id="L32">        return true;</span>
+    }
+    
+    
+
+    /*public void conectar() {
+        con = null;
+        try {
+            con = DriverManager.getConnection(&quot;jdbc:postgresql://localhost:5432/citasMedicas&quot;, &quot;root&quot;, &quot;123kelly&quot;);
+           
+
+
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage() + &quot; Error de Conexion sadjsjd&quot;);
+        }
+        if (con != null) {
+            System.out.println(&quot;Conexión Exitosa&quot;);
+        }
+    }
+    
+      public void desconectar() {
+        if (con != null) {
+            try {
+                con.close();
+                System.out.println(&quot;Desconexión Exitosa&quot;);
+            } catch (SQLException ex) {
+                System.out.println(&quot;Error Al Desconectar &quot; + ex.getMessage());
+            }
+        }
+    }
+    
+    public void crear(Paciente p) {
+        String sql = &quot;INSERT INTO pacientes VALUES ( &quot; + p.getPa_id()+&quot;'&quot; + p.getPa_religion()+&quot;', '&quot; + p.getPa_recidencia()+ &quot;' , '&quot;
+                + p.getPa_procedencia()+ &quot;', '&quot; + p.getPa_ocupacion()+ &quot;', '&quot; + p.getPersona()+ &quot;' ,'&quot;+&quot;);&quot;;
+        
+        System.out.println(&quot;&quot;+sql);
+        
+        try {
+            conectar();
+            Statement sta = con.createStatement();
+            sta.executeUpdate(sql);
+            desconectar();
+        } catch (SQLException ex) {
+            System.out.println(&quot;Error &quot; + ex.getMessage());
+            System.out.println(sql);
+        }
+    }
+    
+    
+    public void eliminar(int id) {
+         String sql = &quot;DELETE FROM pacientes WHERE  pa_id  =&quot; + id + &quot;;&quot;;
+        try {
+            conectar();
+            Statement sta = con.createStatement();
+            sta.executeUpdate(sql);
+            desconectar();
+        } catch (SQLException ex) {
+            System.out.println(&quot;Error &quot; + ex.getMessage());
+        }
+    }
+
+     public Paciente buscar(int id) {
+
+        String sql = &quot;SELECT * FROM pacientes WHERE  pa_id  ='&quot;  + id + &quot;';&quot;;
+         
+        try {
+            conectar();
+            Statement sta = con.createStatement();
+            ResultSet reset = sta.executeQuery(sql);
+            while (reset.next()) {
+                Paciente p = new Paciente(id);
+                //c.setIdCliente(reset.getInt(1));
+                p.setPa_religion(reset.getString(1));
+                p.setPa_recidencia(reset.getString(2));
+                p.setPa_procedencia(reset.getString(3));
+                p.setPa_ocupacion(reset.getString(4));
+
+                return p;
+                
+            }
+            System.out.println(&quot;paciente no existe&quot;);
+           
+            desconectar();
+        } catch (SQLException ex) {
+            System.out.println(&quot;Error &quot; + ex.getMessage());
+        }
+        return null;
+    }
+     
+    
+     public void actualizar(Paciente p, int id) {
+         
+         
+    String sql = &quot;UPDATE pacientes  SET   pa_id  = '&quot; + p.getPa_id()
+            + &quot;', pa_religion = '&quot; + p.getPa_religion()
+            + &quot;', pa_recidencia = '&quot; + p.getPa_recidencia()
+            + &quot;', pa_procedencia = '&quot;+ p.getPa_procedencia()
+            + &quot;', pa_ocupacion = '&quot; + p.getPa_ocupacion()
+          
+                + &quot; WHERE pa_id ='&quot; + id + &quot;';&quot;;
+        System.out.println(sql);
+        try {
+            conectar();
+            Statement sta = con.createStatement();
+            sta.executeUpdate(sql);
+            desconectar();
+        } catch (SQLException ex) {
+            System.out.println(&quot;Error  &quot; + ex.getMessage());
+        }
+    }*/
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>

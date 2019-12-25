@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Paciente.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">citas</a> &gt; <a href="index.source.html" class="el_package">ec.edu.ups.modelo</a> &gt; <span class="el_source">Paciente.java</span></div><h1>Paciente.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ec.edu.ups.modelo;
+
+import ec.edu.ups.modelo.Persona;
+import java.util.Date;
+
+/**
+ *
+ * @author VIVIANA
+ */
+public class Paciente extends Persona{
+    
+    
+  public int pa_id;
+  public String pa_religion;
+  public String  pa_recidencia;
+  public String pa_procedencia;
+  public String pa_ocupacion;
+
+    public Paciente(int pa_id, String pa_religion, String pa_recidencia, String pa_procedencia, String pa_ocupacion, String cedula, String nombres, String apellidos, String telefono, String direccion, Date fechaNacimiento, String sexo) {
+<span class="fc" id="L25">        super(cedula, nombres, apellidos, telefono, direccion, fechaNacimiento, sexo);</span>
+<span class="fc" id="L26">        this.pa_id = pa_id;</span>
+<span class="fc" id="L27">        this.pa_religion = pa_religion;</span>
+<span class="fc" id="L28">        this.pa_recidencia = pa_recidencia;</span>
+<span class="fc" id="L29">        this.pa_procedencia = pa_procedencia;</span>
+<span class="fc" id="L30">        this.pa_ocupacion = pa_ocupacion;</span>
+<span class="fc" id="L31">    }</span>
+
+<span class="nc" id="L33">    public Paciente() {</span>
+<span class="nc" id="L34">    }</span>
+
+
+    public int getPa_id() {
+<span class="fc" id="L38">        return pa_id;</span>
+    }
+
+    public void setPa_id(int pa_id) {
+<span class="fc" id="L42">        this.pa_id = pa_id;</span>
+<span class="fc" id="L43">    }</span>
+
+    public String getPa_religion() {
+<span class="fc" id="L46">        return pa_religion;</span>
+    }
+
+    public void setPa_religion(String pa_religion) {
+<span class="fc" id="L50">        this.pa_religion = pa_religion;</span>
+<span class="fc" id="L51">    }</span>
+
+    public String getPa_recidencia() {
+<span class="fc" id="L54">        return pa_recidencia;</span>
+    }
+
+    public void setPa_recidencia(String pa_recidencia) {
+<span class="fc" id="L58">        this.pa_recidencia = pa_recidencia;</span>
+<span class="fc" id="L59">    }</span>
+
+    public String getPa_procedencia() {
+<span class="fc" id="L62">        return pa_procedencia;</span>
+    }
+
+    public void setPa_procedencia(String pa_procedencia) {
+<span class="fc" id="L66">        this.pa_procedencia = pa_procedencia;</span>
+<span class="fc" id="L67">    }</span>
+
+    public String getPa_ocupacion() {
+<span class="fc" id="L70">        return pa_ocupacion;</span>
+    }
+
+    public void setPa_ocupacion(String pa_ocupacion) {
+<span class="fc" id="L74">        this.pa_ocupacion = pa_ocupacion;</span>
+<span class="fc" id="L75">    }</span>
+
+
+  
+          
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>
