@@ -5,13 +5,19 @@
  */
 package ec.edu.ups.controlador;
 
+import ec.edu.ups.modelo.CitaMedica;
+import ec.edu.ups.modelo.Medico;
 import ec.edu.ups.modelo.Paciente;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -20,20 +26,22 @@ import java.util.List;
  */
 public class ControladorPaciente {
     
-    private Connection con;
+ 
     private List<Paciente> pacientes;
 
     public ControladorPaciente() {
         pacientes = new ArrayList<>();
     }
     
-    public boolean crear(Paciente paciente){
-        pacientes.add(paciente);
+  
+    public boolean crearPaaciente() throws ParseException {
+        DateFormat format = new SimpleDateFormat("dd/mm/yyyy"); // Creamos un formato de fecha
+        Date fecha = format.parse("08/02/1998");
+        Paciente pa = new Paciente(1, "Catolico", "Cuenca", "Azuay", "Estudiante", "0302652482", "Kelly", "Reyes", "2850993", "Muñoz Vernaza", fecha, "Femenino");
+       
+
         return true;
     }
-    
-    
-
    
     
 }

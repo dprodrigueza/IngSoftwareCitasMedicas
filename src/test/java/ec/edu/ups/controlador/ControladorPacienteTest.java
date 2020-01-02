@@ -5,11 +5,6 @@
  */
 package ec.edu.ups.controlador;
 
-import ec.edu.ups.modelo.Paciente;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -19,13 +14,9 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author diego
+ * @author VIVIANA
  */
 public class ControladorPacienteTest {
-    
-    Paciente p = null;
-    ControladorPaciente cP = null;
-    
     
     public ControladorPacienteTest() {
     }
@@ -39,12 +30,7 @@ public class ControladorPacienteTest {
     }
     
     @Before
-    public void setUp() throws ParseException {
-        cP = new ControladorPaciente();
-
-        DateFormat format = new SimpleDateFormat("dd/mm/yyyy"); // Creamos un formato de fecha
-        Date fecha = format.parse("17/01/1999");
-        p = new Paciente(1, "Catolico", "Cuenca", "Azuay", "Estudiante", "0101585933", "Maria", "Romero", "2864219", "Culebrillas y Mantense", fecha, "Femenino");
+    public void setUp() {
     }
     
     @After
@@ -52,20 +38,17 @@ public class ControladorPacienteTest {
     }
 
     /**
-     * Test of crear method, of class ControladorPaciente.
+     * Test of crearPaaciente method, of class ControladorPaciente.
      */
     @Test
-    public void testCrear() {
-        System.out.println("crear");
-        
-        boolean expResult = true;
-        boolean result = cP.crear(p);
+    public void testCrearPaaciente() throws Exception {
+        System.out.println("crearPaaciente");
+        ControladorPaciente instance = new ControladorPaciente();
+        boolean expResult = false;
+        boolean result = instance.crearPaaciente();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-        
-        
-       
+        fail("The test case is a prototype.");
     }
     
 }
