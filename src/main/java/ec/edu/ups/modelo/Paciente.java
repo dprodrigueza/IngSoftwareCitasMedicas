@@ -30,8 +30,8 @@ public class Paciente extends Persona{
         this.pa_ocupacion = pa_ocupacion;
     }
 
-    public Paciente() {
-    }
+    //public Paciente() {
+    //}
 
 
     public int getPa_id() {
