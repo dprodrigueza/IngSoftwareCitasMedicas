@@ -1,68 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="ec.edu.ups.controlador.ControladorPacienteTest" time="0.292" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="ec.edu.ups.controlador.ControladorPacienteTest" time="0.01" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="D:\office\jdk1.8.0_111\jre\bin"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.111-b14"/>
+    <property name="user.country.format" value="EC"/>
+    <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/diego/Diego Personal/Universidad /8vo Ciclo/Ing del software/citas/IngSoftwareCitasMedicas"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
+    <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
-    <property name="user.country" value="MX"/>
+    <property name="user.country" value="ES"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="test" value="ec.edu.ups.controlador.ControladorPacienteTest"/>
+    <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\VIVIANA\Documents\GitHub\IngSoftwareCitasMedicas"/>
+    <property name="user.dir" value="/Users/diego/Diego Personal/Universidad /8vo Ciclo/Ing del software/citas/IngSoftwareCitasMedicas"/>
     <property name="java.runtime.version" value="1.8.0_111-b14"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="D:\office\jdk1.8.0_111\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\VIVIANA\AppData\Local\Temp\"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/t8/l8wr76ns2n131q8xyzpl6l2c0000gn/T/"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar"/>
-    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.2\java\maven\bin\m2.conf"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="D:\office\jdk1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\PuTTY\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\VIVIANA\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Users/diego/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/diego/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/diego/apache-maven-3.6.3/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\VIVIANA"/>
-    <property name="user.timezone" value="America/Bogota"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="library.jansi.path" value="/Users/diego/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="user.home" value="/Users/diego"/>
+    <property name="user.timezone" value="America/Guayaquil"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="VIVIANA"/>
-    <property name="java.class.path" value="C:\Program Files\NetBeans 8.2\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="user.name" value="diego"/>
+    <property name="java.class.path" value="/Users/diego/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="D:\office\jdk1.8.0_111\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=ec.edu.ups.controlador.ControladorPacienteTest -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="es"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_111"/>
-    <property name="java.ext.dirs" value="D:\office\jdk1.8.0_111\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="D:\office\jdk1.8.0_111\jre\lib\resources.jar;D:\office\jdk1.8.0_111\jre\lib\rt.jar;D:\office\jdk1.8.0_111\jre\lib\sunrsasign.jar;D:\office\jdk1.8.0_111\jre\lib\jsse.jar;D:\office\jdk1.8.0_111\jre\lib\jce.jar;D:\office\jdk1.8.0_111\jre\lib\charsets.jar;D:\office\jdk1.8.0_111\jre\lib\jfr.jar;D:\office\jdk1.8.0_111\jre\classes"/>
+    <property name="java.ext.dirs" value="/Users/diego/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\NetBeans 8.2\java\maven"/>
-    <property name="file.separator" value="\"/>
+    <property name="maven.home" value="/Users/diego/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="ec.edu.ups.controlador.ControladorPacienteTest" name="testCrearPaaciente" time="0.052">
+  <testcase classname="ec.edu.ups.controlador.ControladorPacienteTest" name="testCrearPaaciente" time="0.01">
     <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -90,18 +94,18 @@
 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
     <system-out>crearPaaciente
 </system-out>
